@@ -24,7 +24,7 @@ two parts of tecplot file (.plt)
 
 #### 3 Test of the code
 
-Take Taylor-Green flow for example, the testing result (performed at 2022-10-20) is
+Taking Taylor-Green flow for example, the testing result (performed at 2022-10-20) is
 
 <div align=center><img width="600" src="./images/phi_0_5.png"/></div>
 
