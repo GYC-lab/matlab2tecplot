@@ -5,7 +5,7 @@ function [df_dx] = mydiff(f,h,dim,l,m,n)
 %  h - step size
 %  n - total number of grids
 % Output:
-%  df_dx      - title of the .plt file
+%  df_dx - partial derivative
 
 df_dx=zeros(n,m,l);   % partial derivative
 
@@ -57,5 +57,3 @@ switch dim
     otherwise
          fprintf('no such dimension: %d', dim);
 end
-
-

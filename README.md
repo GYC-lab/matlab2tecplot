@@ -1,3 +1,5 @@
+#### 1 Process of exporting data
+
 four steps of creating a TECPLOT file from MATLAB
 
 1. prepare data
@@ -5,7 +7,7 @@ four steps of creating a TECPLOT file from MATLAB
 3. create header
 4. create data (zone)
 
-
+#### 2 Construction of Tecplot file
 
 two parts of tecplot file (.plt)
 
@@ -20,7 +22,11 @@ two parts of tecplot file (.plt)
   - text
   - ...
 
+#### 3 Test of the code
 
+Take Taylor-Green flow for example, the testing result (performed at 2022-10-20) is
+
+<div align=center><img width="600" src="./images/phi_0_5.png"/></div>
 
 #### Reference
 

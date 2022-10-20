@@ -19,6 +19,7 @@ clc;clear;close all;
 %   (4)v    - velocity magnitude
 %   (5)w    - vortcity magnitude
 %   (6)phi  - vortex-surface field
+%   (7)Q    - Q criterion
 
 % Step 1: prepare data
 % load wind.mat % you can use the matlab demo data "wind.mat" for a test
