@@ -7,14 +7,13 @@ function plt_Head(filename,title,variables)
 
 f_id=fopen(filename,'a');
 
-%名称
+% write title of Tecplot file
 if ~isempty(title)
     s=['TITLE = "',title,'"'];
     fprintf(f_id,'%s \r\n',s);
-    disp('test')
 end
 
-%variables
+% write variables
 v=numel(variables);
 s='VARIABLES = ';
 for k=1:v
@@ -26,6 +25,5 @@ end
 fprintf(f_id,'%s \r\n',s);
 fclose(f_id);
 
-end
 
 
