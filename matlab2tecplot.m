@@ -48,15 +48,15 @@ u3=0*cos(x).*sin(y).*cos(z);
 
 % calculate variables
 % basic information
-title='wind';       % title of Tecplot file
-zone_title='wind';  % no title
+title='Taylor_Green_flow';       % title of Tecplot file
+zone_title='Taylor_Green_flow';  % no title
 IJK=size(x);        % size of each dimension
 time=[];            % time of solution, set none for a steady problem
 
 basic_variables={'x','y','z','u1','u2','u3'};         % variables(to be appended)
 basic_Mat_Data=[x(:),y(:),z(:),u1(:),u2(:),u3(:)];  % data(to be appended)
 
-% choose and calculate additional variables
+% choose and calculate additional variables(optional, you can set none)
 serial_num_of_variable = [1:7];   % for example, choose 'velocity magnitude' by input 4
 [additional_variables,additional_Mat_Data]=calculate_additional_variables(serial_num_of_variable,x,y,z,u1,u2,u3,dx,dy,dz);
 
