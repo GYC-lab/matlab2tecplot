@@ -1,6 +1,6 @@
 clc;clear;close all;
 %==============================================================
-%   Preprocess flow field data and export to a Tecplot file
+%   Postprocess flow field data and export to a Tecplot file
 %   yuchen Ge, Fall, 2022
 %==============================================================
 
@@ -57,7 +57,7 @@ basic_variables={'x','y','z','u1','u2','u3'};         % variables(to be appended
 basic_Mat_Data=[x(:),y(:),z(:),u1(:),u2(:),u3(:)];  % data(to be appended)
 
 % choose and calculate additional variables(optional, you can set none)
-serial_num_of_variable = [1:7];   % for example, choose 'velocity magnitude' by input 4
+serial_num_of_variable = [1:6];   % for example, choose 'velocity magnitude' by input 4
 [additional_variables,additional_Mat_Data]=calculate_additional_variables(serial_num_of_variable,x,y,z,u1,u2,u3,dx,dy,dz);
 
 variables= [basic_variables,additional_variables];
